@@ -2,7 +2,13 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .container {
@@ -22,29 +28,57 @@
 }
 .munu__list > li {
   display: block;
-  padding-top: 12px;
+  padding-top: 10px;
 }
 .munu__list > li:not(:last-child) {
   margin-right: 42px;
 }
 
 .info__container {
-  padding: 84px 0 162px 0;
+  padding: 35px 0 162px 0;
   display: flex;
 }
+
 .info__descr {
-  width: 536px;
+  width: 540px;
   margin-right: 25px;
 }
 .info__descr > h1 {
-  margin-bottom: 26px;
+  margin-bottom: 27px;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
 }
 .info__descr > p {
   margin-bottom: 37px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
 }
-.info__descr button, .info__descr a {
+
+.info__descr button {
+  border: none;
+  padding: 15px 35px;
+  border-radius: 50px;
+  background: #F25822;
+  box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.2);
+  color: #FFF;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  margin-right: 35px;
+}
+.info__descr a {
   padding: 15px 33px;
+  color: #AAA;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
+
 .info__animations {
   width: 610px;
   overflow: hidden;
@@ -52,8 +86,6 @@
 .info__animations > img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .partners__container {
@@ -70,4 +102,4 @@
 .partner img {
   width: 100%;
   height: auto;
-}
+}/*# sourceMappingURL=style.css.map */
