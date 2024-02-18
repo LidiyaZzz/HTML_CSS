@@ -1,0 +1,30 @@
+* 
+  box-sizing: border-box
+  padding: 0
+  margin: 0
+  font-family: "Lato", sans-serif
+  font-size: 14px
+  
+a 
+  text-decoration: none 
+  color: inherit
+a,
+button
+  cursor: pointer
+  &:active
+    border: none
+input 
+  &:active
+    border: none
+
+.container
+  width: 1140px
+  margin: auto
+
+@media (min-width: 768px) and (max-width: 1160px) 
+  .container
+    width: 736px
+
+@media (min-width: 1px) and (max-width: 767px) 
+  .container
+    width: 90%

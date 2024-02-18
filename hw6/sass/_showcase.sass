@@ -1,0 +1,68 @@
+.showcase
+    background: #F1E4E6
+    &__container
+        margin-bottom: 65px
+        display: flex
+        align-items: center   
+        min-height: 363px     
+    &__img
+        width: 800px
+        height: 100%
+        margin-right: 63px
+        &>img
+            width: 100%
+            height: 100%
+            object-fit: cover
+    &__title
+        text-transform: uppercase
+        line-height: normal
+        width: 377px
+        position: relative
+        &--one
+            font-size: 48px
+            font-weight: 900            
+        &--two,
+        &--three
+            font-size: 32px
+            font-weight: 700
+        &--three
+            color: #F16D7F
+        &::before
+            content: ""
+            position: absolute
+            height: 100%
+            width: 12px
+            background: #F16D7F
+            top: 0
+            bottom: 0
+            left: -28px
+
+@media (min-width: 768px) and (max-width: 1160px) 
+    .showcase
+        &__img
+            width: 386px
+            margin-right: 39px
+        &__title
+            width: 253px
+            &--one
+                font-size: 44px         
+            &--two,
+            &--three
+                font-size: 24px
+
+
+@media (min-width: 1px) and (max-width: 767px) 
+    .showcase
+        &__container
+            justify-content: center
+        &__img
+            display: none
+        &__title
+            width: 243px
+            margin: auto
+            &--one
+                font-size: 38px         
+            &--two,
+            &--three
+                font-size: 20px
+        

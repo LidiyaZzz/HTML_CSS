@@ -1,0 +1,45 @@
+.advantages
+    background-color: #222224
+    &__container
+        padding: 103px 0
+        display: flex
+        justify-content: space-between
+    &__card
+        max-width: 360px 
+
+.advantage    
+    color: #FBFBFB    
+    &__img
+        width: 45px
+        height: 31px
+        margin: auto
+        margin-bottom: 28px
+        &>img
+            width: 100%
+            height: 100%
+            object-fit: cover
+    &__title
+        font-size: 20px
+        text-align: center
+        padding: 0 5px
+        margin-bottom: 16px
+        
+    &__descr
+         font-size: 14px
+         text-align: center
+
+@media (max-width: 1160px) 
+    
+    .advantages
+        &__container
+            display: block
+        &__card
+            margin: auto
+            margin-bottom: 48px
+
+@media (max-width: 767px) 
+    .advantage  
+        &__img
+            width: 43px
+            height: 30px
+        
