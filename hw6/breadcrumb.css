@@ -1,0 +1,26 @@
+.breadcrumb {
+  min-height: 148px;
+  background-color: #F8F3F4;
+}
+.breadcrumb__container {
+  padding: 60px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.breadcrumb__name {
+  color: #F16D7F;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+.breadcrumb span {
+  color: #636363;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+.breadcrumb span:not(:last-child)::after {
+  content: " / ";
+}
+.breadcrumb span:last-child {
+  color: #F16D7F;
+}/*# sourceMappingURL=breadcrumb.css.map */

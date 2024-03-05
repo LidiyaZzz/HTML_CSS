@@ -1,0 +1,21 @@
+.breadcrumb
+    min-height: 148px
+    background-color: #F8F3F4
+    &__container
+        padding: 60px 0
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__name
+        color: #F16D7F
+        text-transform: uppercase
+        font-size: 24px
+    & span
+        color: #636363
+        text-transform: uppercase
+        font-size: 14px
+        &:not(:last-child)        
+            &::after
+                content: " / "
+        &:last-child
+            color: #F16D7F
