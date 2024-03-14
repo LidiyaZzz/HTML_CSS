@@ -1,9 +1,19 @@
-.catalog
+.popular
     &__container        
         margin-bottom: 60px
         display: grid
         grid-template-columns: repeat(3, 1fr)
-        gap: 30px          
+        gap: 30px
+    &__title
+        grid-column: 1/-1
+        margin-bottom: 48px
+        &>h2 
+            font-size: 30px
+            text-align: center
+        &>p 
+            font-size: 14px
+            color: #9F9F9F
+            text-align: center
     &__card
         background: #F8F8F8        
     &__img
@@ -19,7 +29,7 @@
         &::after
             content: url(./img/basket.png)
             position: absolute   
-        &:hover>.catalog__basket
+        &:hover>.popular__basket
             opacity: 0.86
             display: flex          
     &__basket
@@ -55,7 +65,8 @@
                 left: 11px
                 top: 50%
                 transform: translateY(-50%) 
-                    
+        
+            
     &__text
         padding: 25px 16px
     &__name
@@ -70,45 +81,27 @@
     &__prise
         color: #F16D7F
         font-size: 16px
-    &__list
+    &__link
+        display: block
         grid-column: 1/-1
         margin: auto
         background: #fff
-        border: 1px solid #EBEBEB     
+        border: 1px solid #FF6A6A
+        width: 212px
         min-height: 48px
-        padding: 15px
-        list-style: none
-        display: flex
-        justify-content: space-between
-        &--li
-            display: block
-            color: #C4C4C4
-            font-size: 16px         
-            &:hover a
-                color: #F16D7F
-                & svg
-                    fill: #F16D7F            
-            & svg
-                width: 8px
-                height: 14px
-                fill: #000000
-        &--ml  
-            margin-left: 20px 
-        &--ml0
-            margin-left: 0
+        padding: 15px 39px
+        color: #F26376
+        font-size: 14px
 
 
-                
-
-
-// @media (min-width: 768px) and (max-width: 1160px) 
-//     .product
-//         &__container    
-//             grid-template-columns: repeat(2, 1fr)
-//         &__name
-//             margin-bottom: 13px       
+@media (min-width: 768px) and (max-width: 1160px) 
+    .popular
+        &__container    
+            grid-template-columns: repeat(2, 1fr)
+        &__name
+            margin-bottom: 13px       
        
-// @media (min-width: 1px) and (max-width: 767px) 
-//     .product
-//         &__container    
-//             grid-template-columns: repeat(1, 1fr)
+@media (min-width: 1px) and (max-width: 767px) 
+    .popular
+        &__container    
+            grid-template-columns: repeat(1, 1fr)
