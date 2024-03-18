@@ -5,19 +5,29 @@
         padding: 50px 0
     &__all
         color: #000000
-        text-transform: uppercase
         font-size: 14px
         font-weight: 500
         margin-right: 320px
-        position: relative
+        position: relative        
         & svg
             margin-left: 11px
             fill: #000000
-        &--list
-            width: 360px
-            height: 531px    
+        &[open]
+            padding: 13px 16px
+            width: 360px  
             box-shadow: 6px 4px 35px #0000002d
-            z-index: 99
+            &>summary                 
+                color: #EF5B70
+                padding: 0
+                &>svg
+                    fill:#EF5B70
+        
+    &__title
+        color: #EF5B70
+        text-transform: uppercase
+        font-size: 14px
+        font-weight: 500
+        margin-right: 16px
     &__trend,
     &__size,
     &__price
@@ -26,7 +36,70 @@
         & svg
             margin-left: 10px
 
-
 summary
     list-style: none
-    cursor: pointer
+    cursor: pointer    
+    padding: 13px 16px
+
+.all
+    &__list        
+        &>ul
+            margin: 24px 0 4px 16px
+            list-style: none
+            &>li                 
+                margin-bottom: 11px
+    
+    &__category 
+        border-left: 5px solid  #EF5B70
+        border-bottom: 1px solid  #EBEBEB
+        padding: 8px 0 12px 11px
+        margin-top: 20px
+        color: #EF5B70
+        text-transform: uppercase
+        font-size: 14px
+        font-weight: normal
+
+.size
+    &__list
+        list-style: none
+        box-shadow: 6px 4px 35px #0000002d
+        padding: 7px 9px
+        &>li 
+            margin-bottom: 6px
+            &>a 
+                display: inline-block
+                width: 13px
+                height: 13px
+                border: 1px solid #EBEBEB
+                margin-right: 9px
+
+
+@media (max-width: 1180px)   
+    .filter  
+        &__name
+            justify-content: space-between
+        &__all
+            margin-right: auto
+        &__price
+            margin-right: 0px
+        
+
+@media (max-width: 767px) 
+    .filter  
+        &__trend,
+        &__size,
+        &__price
+            & svg
+                margin-left: 0px
+            
+        &__trend,
+        &__size
+            margin-right: 0px
+    summary
+        font-size: 12px
+        &>span         
+            display: none
+        
+            
+    
+        

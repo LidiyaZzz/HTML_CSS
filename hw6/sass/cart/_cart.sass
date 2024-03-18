@@ -10,12 +10,12 @@
         flex-direction: column
     &__forms
         width: 360px
-        &--name
-            color: #222222
-            text-transform: uppercase
-            font-size: 16px
-            font-weight: normal
-            margin-bottom: 20px
+    &__name
+        color: #222222
+        text-transform: uppercase
+        font-size: 16px
+        font-weight: normal
+        margin-bottom: 20px
     &__links
         display: flex
         justify-content: space-between
@@ -150,3 +150,45 @@
 
 
 
+    
+@media (max-width: 1180px)
+    .cart
+        &__container
+            flex-wrap: wrap
+        &__cards,
+        &__forms
+            width: 100%
+        &__forms
+            margin-top: 64px
+        &__form
+            flex-direction: row
+            justify-content: space-between
+        &__input,
+        &__sum
+            width: 49%
+@media (max-width: 767px) 
+    .cart        
+        &__form
+            flex-direction: column
+            justify-content: start
+        &__input,
+        &__sum
+            width: 100%
+        &__link
+            padding: 9px 17px
+            font-size: 12px
+            width: 48%
+    .cards
+        &__card
+            justify-content: space-between
+        &__img
+            width: 30%
+        &__info
+            padding: 13px 17px
+        &__info div,
+        &__info div span        
+            font-size: 14px
+            line-height: 1.8
+        &__name
+            font-size: 16px
+        

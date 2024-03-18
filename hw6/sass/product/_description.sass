@@ -1,5 +1,7 @@
 .description
     &__container
+        width: 1140px
+        margin: auto
         background-color: #fff
         border: 1px solid #EAEAEA
         margin-bottom: 128px
@@ -52,7 +54,7 @@
             bottom: -64px
             right: 50%
             transform: translateX(50%)
-            width: 642px
+            width: 70%
             height: 1px
             background-color: #EAEAEA  
     &__choose
@@ -104,3 +106,21 @@
             
 
     
+@media (max-width: 1180px)
+    .description
+        &__container
+            width: 736px
+
+@media (max-width: 767px) 
+    .description
+        &__container
+            width: 100%
+            top: 0
+            margin-bottom: 64px
+            padding: 64px 25px
+        &__text        
+            width: 100%
+
+    .choose
+        &__menu
+            font-size: 10px

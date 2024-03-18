@@ -67,12 +67,44 @@
             font-size: 11px
             font-weight: light
             color: #000000
-            margin-right: 10px            
+            margin-right: 10px  
+    &__dn
+        display: none         
     &__caption
         font-size: 13px
         font-weight: light
         color: #B1B1B1
         margin: 20px 0 39px 0
+
+
+    
+@media (max-width: 1180px)
+    .registration
+        &__form
+            width: 48%
+        &__descr
+            width: 48%
+        &__title
+            font-size: 16px
+        &__text
+            font-size: 16px
+        &__list li 
+            font-size: 16px
+    .registr
+        &__radio
+            &--dn
+                display: block
+
+
+@media (max-width: 767px) 
+    .registration
+        &__container
+            flex-direction: column
+        &__form
+            width: 100%
+            margin-bottom: 40px
+        &__descr
+            width: 100%
 
 
         

@@ -28,10 +28,25 @@
             fill: #F16D7F
     &__img 
         height: 100%
-        width: 100%
-        img
+        width: auto
+        margin: auto
+        & img
             height: 100%
             width: auto
+            object-fit: cover 
+
+
+@media (max-width: 767px) 
+    .slider
+        height: 624px
+        &__img
+            width: 80%             
+            height: auto
+            & img
+                height: auto
+                width: 100%
+                object-fit: cover 
             
+
 
     

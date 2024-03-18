@@ -80,18 +80,18 @@
         list-style: none
         display: flex
         justify-content: space-between
-        &--li
-            display: block
-            color: #C4C4C4
-            font-size: 16px         
-            &:hover a
-                color: #F16D7F
-                & svg
-                    fill: #F16D7F            
+    &__item 
+        display: block
+        color: #C4C4C4
+        font-size: 16px         
+        &:hover a
+            color: #F16D7F
             & svg
-                width: 8px
-                height: 14px
-                fill: #000000
+                fill: #F16D7F            
+        & svg
+            width: 8px
+            height: 14px
+            fill: #000000
         &--ml  
             margin-left: 20px 
         &--ml0
@@ -101,14 +101,14 @@
                 
 
 
-// @media (min-width: 768px) and (max-width: 1160px) 
-//     .product
-//         &__container    
-//             grid-template-columns: repeat(2, 1fr)
-//         &__name
-//             margin-bottom: 13px       
+@media (min-width: 768px) and (max-width: 1160px) 
+    .catalog
+        &__container    
+            grid-template-columns: repeat(2, 1fr)
+        &__name
+            margin-bottom: 13px       
        
-// @media (min-width: 1px) and (max-width: 767px) 
-//     .product
-//         &__container    
-//             grid-template-columns: repeat(1, 1fr)
+@media (min-width: 1px) and (max-width: 767px) 
+    .catalog
+        &__container    
+            grid-template-columns: repeat(1, 1fr)
